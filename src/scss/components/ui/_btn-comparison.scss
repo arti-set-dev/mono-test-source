@@ -1,0 +1,7 @@
+.btn-comparison {
+  @include bg-contain;
+
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/svg/comparison.svg");
+}

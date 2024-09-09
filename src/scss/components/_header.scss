@@ -1,0 +1,54 @@
+.header {
+  padding: 36px 0;
+  background: var(--light-color);
+
+  @include small-tablet {
+    padding: 22px 0;
+  }
+
+  &__container {
+    position: relative;
+
+    @include flex-all-sb;
+  }
+
+  &__nav {
+    margin-right: auto;
+    margin-left: 59px;
+
+    @media (max-width: (1200px)) {
+      margin-left: 48px;
+    }
+
+    .nav__item:last-child {
+      display: none;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 59px;
+
+    @media (max-width: (1200px)) {
+      gap: 48px;
+    }
+
+    &-btns {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  &__btn {
+    @media (max-width: (1120px)) {
+      display: none;
+    }
+  }
+}

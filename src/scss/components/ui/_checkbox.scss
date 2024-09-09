@@ -1,0 +1,20 @@
+.checkbox {
+  flex-shrink: 0;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  background-image: none;
+  background-color: #f5f5f5;
+  cursor: pointer;
+
+  @include bg-auto;
+
+  @include hover {
+    background-color: var(--accent-color);
+  }
+
+  &:checked {
+    background-image: url("../img/svg/check.svg");
+    background-color: var(--accent-color);
+  }
+}

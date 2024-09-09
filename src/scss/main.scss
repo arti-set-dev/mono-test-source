@@ -1,0 +1,23 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// ui
+@import "./components/ui/burger";
+@import "./components/ui/logo";
+@import "./components/ui/btn-search";
+@import "./components/ui/btn-comparison";
+@import "./components/ui/btn-accent";
+@import "./components/ui/field";
+@import "./components/ui/checkbox";
+@import "./components/ui/btn-outline";
+
+// компоненты
+@import "./components/header";
+@import "./components/nav";
+@import "./components/address";
+@import "./components/breadcrumbs";
+@import "./components/hero";
+@import "./components/footer";

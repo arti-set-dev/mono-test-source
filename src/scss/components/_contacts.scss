@@ -1,0 +1,143 @@
+.contacts {
+  padding: 62px 0 66px;
+  background: var(--light-color);
+
+  @include tablet {
+    padding: 40px 0 50px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 53px;
+
+    @include small-tablet {
+      gap: 73px;
+    }
+
+    @media (max-width: (730px)) {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+
+  &__address {
+    flex-basis: 48%;
+    font-style: normal;
+  }
+
+  &__address-phone {
+    @include small-tablet {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__main-text {
+    display: block;
+    width: fit-content;
+  }
+
+  &__address-email {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 25px;
+    color: var(--accent-color);
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 110%;
+    color: var(--accent-text-color);
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+
+  &__details {
+    &:not(:last-child) {
+      margin-bottom: 17px;
+    }
+  }
+
+  &__text-small {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color: #808080;
+  }
+
+  &__form-title {
+    margin-bottom: 20px;
+
+    @include tablet {
+      margin-bottom: 10px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+
+  &__form {
+    flex-basis: 52%;
+  }
+
+  &__form-labels {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 30px;
+
+    @include tablet {
+      gap: 15px;
+    }
+  }
+
+  &__form-label {
+    position: relative;
+    flex-basis: 100%;
+
+    .just-validate-error-label {
+      position: absolute;
+      left: 20px;
+      bottom: -1.1rem;
+    }
+
+    &:first-child, &:nth-child(2) {
+      flex-basis: calc(50% - 15px);
+
+      @include tablet {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  &__form-agree {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 16px;
+
+    @include mobile {
+      margin-bottom: 21px;
+    }
+
+    .just-validate-error-label {
+      display: none;
+    }
+  }
+
+  &__form-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    color: #808080;
+
+    a {
+      color: #262633;
+    }
+  }
+}

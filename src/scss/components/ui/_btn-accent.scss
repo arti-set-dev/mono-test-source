@@ -1,0 +1,23 @@
+.btn-accent {
+  border-radius: 14px;
+  padding: 19px 28px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--light-color);
+  background: var(--accent-color);
+  transition: background var(--ui-transition) ease;
+
+  @include hover {
+    background: var(--accent-hover-color);
+  }
+
+  &:active {
+    background: #991f2d;
+  }
+
+  &[disabled] {
+    color: var(--second-text-color);
+    background: var(--line-color);
+  }
+}

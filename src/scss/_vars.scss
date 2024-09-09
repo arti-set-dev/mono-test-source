@@ -1,0 +1,22 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Golos", sans-serif;
+  --second-family: "RoadRadio", sans-serif;
+  --third-family: "Akzidenz Grotesk Pro", sans-serif;
+  --font4: "Graphik LC Web", sans-serif;
+  --content-width: 1290px;
+  --container-offset: 29px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --ui-transition: 0.3s;
+
+  // colors
+  --light-color: #fff;
+  --accent-color: #BF2738;
+  --accent-hover-color: #cc2a3c;
+  --link-color: #f23147;
+  --accent-text-color: #262633;
+  --second-text-color: #797986;
+  --line-color: #eaeaea;
+}

@@ -1,0 +1,17 @@
+.logo {
+  display: block;
+  width: 106px;
+  height: 64px;
+
+  @include bg-contain;
+
+  @include small-tablet {
+    width: 90px;
+    height: 50px;
+  }
+
+  @include mobile {
+    width: 67px;
+    height: 40px;
+  }
+}

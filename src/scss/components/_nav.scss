@@ -1,0 +1,29 @@
+.nav {
+  @media (max-width: (730px)) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 420px;
+    gap: 15px 46px;
+
+    @media (max-width: (1200px)) {
+      gap: 30px;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--accent-text-color);
+
+    @media (max-width: (1200px)) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      color: var(--accent-text-color);
+    }
+  }
+}

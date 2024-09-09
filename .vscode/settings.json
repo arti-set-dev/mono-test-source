@@ -1,0 +1,12 @@
+{
+  "stylelint.validate": [
+    "css",
+    "sass",
+    "scss",
+    "less"
+  ],
+  "stylelint.config": null,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit"
+  }
+}

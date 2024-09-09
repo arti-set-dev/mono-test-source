@@ -1,0 +1,27 @@
+.map {
+  width: 100%;
+  min-height: 599px;
+  background: #f5f5f5;
+
+  @include small-tablet {
+    min-height: 480px;
+  }
+
+  @include mobile {
+    min-height: 477px;
+  }
+}
+
+.ymaps-2-1-79-controls__control_toolbar {
+  /* stylelint-disable-next-line declaration-no-important */
+  display: none !important;
+}
+
+[class*="copyrights-pane"] {
+  /* stylelint-disable-next-line declaration-no-important */
+  display: none !important;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
